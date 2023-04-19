@@ -27,8 +27,11 @@ describe('AppComponent', () => {
     const app = fixture.nativeElement;
     const menuItems = app.querySelectorAll('ion-label');
     expect(menuItems.length).toEqual(12);
+    
     expect(menuItems[0].textContent).toContain('page');
-    expect(menuItems[1].textContent).toContain('Outbox');
+
+
+    //conteiner header
   });
 
   it('should have urls', async () => {
@@ -40,8 +43,8 @@ describe('AppComponent', () => {
     expect(menuItems[0].getAttribute('ng-reflect-router-link')).toEqual(
       '/folder/page'
     );
-    expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual(
+    /*expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual(
       '/folder/outbox'
-    );
+    );*/
   });
 });

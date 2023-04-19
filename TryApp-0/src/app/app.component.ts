@@ -20,7 +20,7 @@ export class AppComponent {
 
 
   ];
-  public labels = ['Family', 'Friends'];
+  public labels = ['Rendimentos', 'Informações'];
   /// aqui as labels. ainda não sei como associar uma coisa a elas
   constructor() {}
 }
